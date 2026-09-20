@@ -3,384 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Gizem'in Ders Programı</title>
-
     <style>
         * {
             box-sizing: border-box;
         }
-
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background: #f1f5f9;
-            color: #1e293b;
-        }
-
-        header {
-            background: #315c8c;
-            color: white;
-            text-align: center;
-            padding: 30px 15px;
-        }
-
-        header h1 {
-            margin: 0 0 10px;
-            font-size: 28px;
-        }
-
-        header p {
-            margin: 0;
-            font-size: 16px;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 25px auto;
-            padding: 0 15px;
-        }
-
-        .card {
-            background: white;
-            border-radius: 15px;
-            padding: 20px;
-            margin-bottom: 20px;
-            box-shadow: 0 3px 12px rgba(0,0,0,0.08);
-        }
-
-        h2 {
-            color: #315c8c;
-            text-align: center;
-        }
-
-        .table-wrapper {
-            overflow-x: auto;
-        }
-
         table {
             width: 100%;
             border-collapse: collapse;
-            min-width: 850px;
+            margin-top: 20px;
         }
-
+        th, td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: center;
+        }
         th {
-            background: #315c8c;
-            color: white;
-            padding: 12px;
-            border: 1px solid white;
-        }
-
-        td {
-            padding: 10px;
-            text-align: center;
-            border: 1px solid #dbe3ec;
-            font-size: 13px;
-            vertical-align: middle;
-        }
-
-        td:first-child {
-            font-weight: bold;
-            background: #eaf0f7;
-            white-space: nowrap;
-        }
-
-        tr:nth-child(even) {
-            background: #f8fafc;
-        }
-
-        .course {
-            font-weight: bold;
-            color: #315c8c;
-        }
-
-        .empty {
-            color: #94a3b8;
-        }
-
-        .info {
-            background: #e8f1ff;
-            border-left: 5px solid #315c8c;
-            padding: 15px;
-            border-radius: 8px;
-        }
-
-        footer {
-            text-align: center;
-            padding: 25px;
-            color: #64748b;
-            font-size: 14px;
-        }
-
-        @media (max-width: 600px) {
-            header h1 {
-                font-size: 23px;
-            }
-
-            .card {
-                padding: 12px;
-            }
-
-            td, th {
-                padding: 9px;
-                font-size: 12px;
-            }
+            background-color: #f4f4f4;
         }
     </style>
 </head>
-
 <body>
 
-    <header>
-        <h1>Gizem'in Ders Programı</h1>
-        <p>Balıkesir Üniversitesi</p>
-        <p>Bilgisayar Programcılığı • 2026-2027 Güz</p>
-    </header>
+    <h1>Gizem'in Ders Programı</h1>
+    <h2>Bilgisayar Programcılığı</h2>
 
-    <div class="container">
-
-        <div class="card">
-            <h2>Hakkımda</h2>
-
-            <p>
-                Merhaba! Ben Gizem.
-                Bilgisayar Programcılığı öğrencisiyim.
-                Haftalık ders programımı burada paylaşıyorum.
-            </p>
-
-            <div class="info">
-                <strong>Üniversite:</strong> Balıkesir Üniversitesi
-                <br><br>
-                <strong>Bölüm:</strong> Bilgisayar Programcılığı
-            </div>
-        </div>
-
-        <div class="card">
-            <h2>Haftalık Ders Programım</h2>
-
-            <div class="table-wrapper">
-                <table>
-
-                    <tr>
-                        <th>Saat</th>
-                        <th>Pazartesi</th>
-                        <th>Salı</th>
-                        <th>Çarşamba</th>
-                        <th>Perşembe</th>
-                        <th>Cuma</th>
-                    </tr>
-
-                    <tr>
-                        <td>09:25 - 10:10</td>
-
-                        <td>
-                            <span class="course">CMP1105</span><br>
-                            Ağ Yönetimi ve Bilgi Güvenliği
-                        </td>
-
-                        <td class="empty">—</td>
-
-                        <td>
-                            <span class="course">CMP1101</span><br>
-                            Matematik I
-                        </td>
-
-                        <td class="empty">—</td>
-                        <td class="empty">—</td>
-                    </tr>
-
-                    <tr>
-                        <td>10:20 - 11:05</td>
-
-                        <td>
-                            <span class="course">CMP1105</span><br>
-                            Ağ Yönetimi ve Bilgi Güvenliği
-                        </td>
-
-                        <td class="empty">—</td>
-
-                        <td>
-                            <span class="course">CMP1101</span><br>
-                            Matematik I
-                        </td>
-
-                        <td>
-                            <span class="course">CMP1102</span><br>
-                            Algoritma ve Programlama Temelleri
-                        </td>
-
-                        <td>
-                            <span class="course">TDB1101</span><br>
-                            Türk Dili I
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>11:15 - 12:00</td>
-
-                        <td>
-                            <span class="course">CMP1104</span><br>
-                            Temel ve Dijital Elektronik
-                        </td>
-
-                        <td class="empty">—</td>
-
-                        <td>
-                            <span class="course">CMP1101</span><br>
-                            Matematik I
-                        </td>
-
-                        <td>
-                            <span class="course">CMP1102</span><br>
-                            Algoritma ve Programlama Temelleri
-                        </td>
-
-                        <td>
-                            <span class="course">TDB1101</span><br>
-                            Türk Dili I
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>12:30 - 13:15</td>
-
-                        <td>
-                            <span class="course">CMP1104</span><br>
-                            Temel ve Dijital Elektronik
-                        </td>
-
-                        <td class="empty">—</td>
-
-                        <td>
-                            <span class="course">AIT1101</span><br>
-                            Atatürk İlkeleri ve İnkılap Tarihi I
-                        </td>
-
-                        <td>
-                            <span class="course">CMP1102</span><br>
-                            Algoritma ve Programlama Temelleri
-                        </td>
-
-                        <td class="empty">—</td>
-                    </tr>
-
-                    <tr>
-                        <td>13:25 - 14:10</td>
-
-                        <td>
-                            <span class="course">CMP1104</span><br>
-                            Temel ve Dijital Elektronik
-                        </td>
-
-                        <td class="empty">—</td>
-
-                        <td>
-                            <span class="course">AIT1101</span><br>
-                            Atatürk İlkeleri ve İnkılap Tarihi I
-                        </td>
-
-                        <td>
-                            <span class="course">CMP1102</span><br>
-                            Algoritma ve Programlama Temelleri
-                        </td>
-
-                        <td class="empty">—</td>
-                    </tr>
-
-                    <tr>
-                        <td>14:20 - 15:05</td>
-
-                        <td>
-                            <span class="course">CMP1107</span><br>
-                            Gönüllülük Çalışmaları
-                        </td>
-
-                        <td>
-                            <span class="course">CMP1103</span><br>
-                            Ofis Yazılımları
-                        </td>
-
-                        <td>
-                            <span class="course">CMP1106</span><br>
-                            İletişim
-                        </td>
-
-                        <td class="empty">—</td>
-                        <td class="empty">—</td>
-                    </tr>
-
-                    <tr>
-                        <td>15:15 - 16:00</td>
-
-                        <td>
-                            <span class="course">CMP1107</span><br>
-                            Gönüllülük Çalışmaları
-                        </td>
-
-                        <td>
-                            <span class="course">CMP1103</span><br>
-                            Ofis Yazılımları
-                        </td>
-
-                        <td>
-                            <span class="course">CMP1106</span><br>
-                            İletişim
-                        </td>
-
-                        <td class="empty">—</td>
-
-                        <td>
-                            <span class="course">YDI1101</span><br>
-                            Yabancı Dil I (İngilizce)
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>16:10 - 16:55</td>
-
-                        <td class="empty">—</td>
-
-                        <td>
-                            <span class="course">CMP1103</span><br>
-                            Ofis Yazılımları
-                        </td>
-
-                        <td>
-                            <span class="course">CMP1103</span><br>
-                            Ofis Yazılımları
-                        </td>
-
-                        <td class="empty">—</td>
-
-                        <td>
-                            <span class="course">YDI1101</span><br>
-                            Yabancı Dil I (İngilizce)
-                        </td>
-                    </tr>
-
-                </table>
-            </div>
-        </div>
-
-        <div class="card">
-            <h2>Projelerim</h2>
-
-            <p>
-                İleride yaptığım okul projelerini burada paylaşacağım.
-            </p>
-
-            <ul>
-                <li>Arduino Projesi</li>
-                <li>LED İsim Projesi</li>
-                <li>Web Sitesi Projeleri</li>
-            </ul>
-        </div>
-
-    </div>
-
-    <footer>
-        © 2026 Gizem | Kişisel Web Sitem
-    </footer>
+    <!-- Ders Programı Tablosu -->
+    <table>
+        <thead>
+            <tr>
+                <th>Saat</th>
+                <th>Pazartesi</th>
+                <th>Salı</th>
+                <th>Çarşamba</th>
+                <th>Perşembe</th>
+                <th>Cuma</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>09:00 - 10:00</td>
+                <td>Programlama Temelleri</td>
+                <td>Ağ Temelleri</td>
+                <td>-</td>
+                <td>Veritabanı</td>
+                <td>-</td>
+            </tr>
+            <!-- Diğer ders saatlerini buraya <tr>...</tr> ekleyerek çoğaltabilirsiniz -->
+        </tbody>
+    </table>
 
 </body>
-  </html>
+</html>
